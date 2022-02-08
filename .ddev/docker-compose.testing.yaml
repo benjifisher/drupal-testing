@@ -14,7 +14,7 @@ services:
       - chromedriver:$DDEV_HOSTNAME
     environment:
       # PHPUnit
-      SYMFONY_DEPRECATIONS_HELPER: weak
+      SYMFONY_DEPRECATIONS_HELPER: 'verbose=1'
       SIMPLETEST_DB: mysql://db:db@db:3306/db
       SIMPLETEST_BASE_URL: http://web
       BROWSERTEST_OUTPUT_DIRECTORY: /var/www/html/private/browsertest_output
